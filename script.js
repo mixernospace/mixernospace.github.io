@@ -137,6 +137,7 @@ function loadchannel(channelid) {
         subscriberUpdate(data.items[0].statistics.subscriberCount)
         viewUpdate(data.items[0].statistics.viewCount)
         videoUpdate(data.items[0].statistics.videoCount)
+        graphUpdate(data.items[0].statistics.subscriberCount)
 
     })
     fetch('https://cors.mixerno.space/https://api.mixerno.space/youtube/channels/snippet/'+channelid).then(res => res.json()).then(data => {
@@ -174,6 +175,7 @@ fetch('https://cors.mixerno.space/https://api.mixerno.space/youtube/channels/sta
         subscriberUpdate(data.items[0].statistics.subscriberCount)
         viewUpdate(data.items[0].statistics.viewCount)
         videoUpdate(data.items[0].statistics.videoCount)
+        graphUpdate(data.items[0].statistics.subscriberCount)
 
     })
 }, 2000);
