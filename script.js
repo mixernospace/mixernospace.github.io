@@ -133,13 +133,13 @@ var urli = window.location.href
 var params = urli.split('&u=')
 loadchannel(params[1])
 function loadchannel(channelid) {
-    fetch('https://cors.mixerno.space/https://api.mixerno.space/youtube/statistics/'+channelid).then(res => res.json()).then(data => {
+    fetch('https://cors.mixerno.space/https://api.mixerno.space/youtube/channels/statistics/'+channelid).then(res => res.json()).then(data => {
         subscriberUpdate(data.items[0].statistics.subscriberCount)
         viewUpdate(data.items[0].statistics.viewCount)
         videoUpdate(data.items[0].statistics.videoCount)
 
     })
-    fetch('https://cors.mixerno.space/https://api.mixerno.space/youtube/snippet/'+channelid).then(res => res.json()).then(data => {
+    fetch('https://cors.mixerno.space/https://api.mixerno.space/youtube/channels/snippet/'+channelid).then(res => res.json()).then(data => {
         nameUpdate(data.items[0].snippet.title)
         imageUpdate(data.items[0].snippet.thumbnails.high.url)
     })
@@ -170,7 +170,7 @@ function graphUpdate(count) {
       } 
 }
 setInterval(function() {
-fetch('https://cors.mixerno.space/https://api.mixerno.space/youtube/statistics/'+params[1]).then(res => res.json()).then(data => {
+fetch('https://cors.mixerno.space/https://api.mixerno.space/youtube/channels/statistics/'+params[1]).then(res => res.json()).then(data => {
         subscriberUpdate(data.items[0].statistics.subscriberCount)
         viewUpdate(data.items[0].statistics.viewCount)
         videoUpdate(data.items[0].statistics.videoCount)
