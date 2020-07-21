@@ -1,0 +1,149 @@
+body {
+    background-color: #eef5f9
+}
+
+.navbar {
+    background: #1a2980;
+    background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);
+    background: linear-gradient(to right, #26D0CE, #1A2980);
+    flex-direction: row
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: roboto;
+    font-weight: 400
+}
+
+.text-card {
+    margin: 15px 15px 0
+}
+
+.main-odometer {
+    font-size: calc(30px + 3vw)
+}
+
+.hidden {
+    display: none
+}
+
+.profile-picture {
+    box-shadow: 5px 5px 20px 1px #e0e0e0;
+    border: 2px solid #000
+}
+
+.profile-img {
+    height: 100%;
+    justify-self: center
+}
+
+.channel-name {
+    font-size: calc(8px + 2vw)
+}
+
+.mainWrapper {
+    margin-top: 50px;
+    margin-left: 225px
+}
+
+.counter-card {
+    justify-content: center
+}
+
+.odometer {
+    font-family: roboto;
+    font-weight: 400
+}
+
+.navbar-text {
+    color: #fff;
+    font-size: calc(15px + 1vw)
+}
+
+.customize-button {
+    background-color: #933a03;
+    color: #fff
+}
+
+.social-button {
+    background-color: red;
+    color: #fff
+}
+
+.sidebar {
+    position: fixed;
+    width: 225px;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    padding-top: 25px;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    background-color: #fff
+}
+
+.navbar-button {
+    outline: none;
+    border: 0;
+    background: 0 0;
+    color: #fff;
+    font-size: 20px;
+    display: none
+}
+
+iframe[src*=ads-iframe] {
+    display: none
+}
+
+.bottom-odometer {
+    font-size: calc(25px + 1vw)
+}
+
+.m-row {
+    margin-top: 20px
+}
+
+.nav-item {
+    font-size: 17px;
+    margin-left: 10px
+}
+
+.nav-title-text {
+    margin-top: 40px
+}
+
+@media(max-width:946px) {
+    .sidebar {
+        width: auto
+    }
+
+    .mainWrapper {
+        margin-left: 70px
+    }
+
+    .navbar-text-gone {
+        font-size: 0
+    }
+
+    .navbar-button {
+        display: inline-block
+    }
+}
+
+@media(max-width:567px) {
+    .main-odometer {
+        font-size: calc(18px + 2.5vw)
+    }
+}
+
+.sidebar-expand {
+    width: 225px
+}
+
+.lc_ads {
+    width: 100%;
+    margin: 0 auto
+}
